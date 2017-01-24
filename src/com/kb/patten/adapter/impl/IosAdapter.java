@@ -24,6 +24,12 @@ public class IosAdapter implements Ios {
 	}
 
 	@Override
+	public void linkAppleStore() {
+		// 不支援的 API 拋出錯誤
+		throw new UnsupportedOperationException("使用 Ios 轉接器，無法使用 apple store");
+	}
+
+	@Override
 	public void useSwiftProgram() {
 		androidProgram.useJavaProgram();
 	}

@@ -12,6 +12,7 @@ public class Test {
 		Ios iosProgram = new IosProgram();
 		iosProgram.useSwiftProgram();
 		iosProgram.build();
+		iosProgram.linkAppleStore();
 
 		System.out.println("\n###中場休息時間###\n");
 
@@ -26,5 +27,6 @@ public class Test {
 		IosAdapter iosAdapter = new IosAdapter(androidProgram);
 		iosAdapter.useSwiftProgram();
 		iosAdapter.build();
+		iosAdapter.linkAppleStore();
 	}
 }

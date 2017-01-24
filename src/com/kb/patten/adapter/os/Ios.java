@@ -9,5 +9,7 @@ package com.kb.patten.adapter.os;
 public interface Ios {
 	void build();
 
+	void linkAppleStore();
+
 	void useSwiftProgram();
 }
