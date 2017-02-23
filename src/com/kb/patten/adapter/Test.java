@@ -24,7 +24,7 @@ public class Test {
 		System.out.println("\n###中場休息時間###\n");
 
 		// Android 使用 IOS 轉接器
-		IosAdapter iosAdapter = new IosAdapter(androidProgram);
+		Ios iosAdapter = new IosAdapter(androidProgram);
 		iosAdapter.useSwiftProgram();
 		iosAdapter.build();
 		iosAdapter.linkAppleStore();
