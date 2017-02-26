@@ -15,7 +15,7 @@ public class IosAdapter implements Ios {
 
 	public IosAdapter(Android androidProgram) {
 		this.androidProgram = androidProgram;
-		System.out.println("使用 Ios 轉接器，Android 偷偷淺入了 Ios 系統");
+		System.out.println("使用 Ios 轉接器，Android 偷偷潛入了 Ios 系統");
 	}
 
 	@Override
