@@ -14,6 +14,6 @@ public class Test {
 				SingletonService task2 = SingletonService.getInstance();
 				task2.getInfo();
 			}
-		}).run();
+		}).start();
 	}
 }

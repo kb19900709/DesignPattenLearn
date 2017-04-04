@@ -18,9 +18,6 @@ public class SingletonService {
 		return INSTANCE;
 	};
 
-	private SingletonService() {
-	}
-
 	public void getInfo() {
 		System.out.println(this);
 	}
