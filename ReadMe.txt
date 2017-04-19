@@ -9,3 +9,5 @@ Observer------------觀察者模式
 Singleton-----------單體模式
 Strategy------------策略模式 
 Template method-----樣板模式
+Itertor-------------反覆器模式
+Composite-----------合成模式
