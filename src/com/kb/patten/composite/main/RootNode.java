@@ -4,6 +4,12 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+/**
+ * 根節點
+ * 
+ * @author KB
+ * @version 1.0
+ */
 public class RootNode extends Node {
 	private List<? extends Node> nodeList = new ArrayList<>();
 

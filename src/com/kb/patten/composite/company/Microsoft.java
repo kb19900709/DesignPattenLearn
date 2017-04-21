@@ -10,6 +10,7 @@ import com.kb.patten.composite.main.NodeSupport;
 public class Microsoft extends Company {
 	private static volatile int CURRENT_MEMBER_COUNT = 0;
 	private static int EMPLOYEE_GROUP_COUNT = 3;
+	// 此處為 Array
 	private Employee[] employeeGroup = new EmployeeImpl[EMPLOYEE_GROUP_COUNT];
 
 	@Override
@@ -26,6 +27,7 @@ public class Microsoft extends Company {
 
 	@Override
 	public Iterator<? extends Node> getNodeIterator() {
+		// 實作 Iterator
 		return new Iterator<Employee>() {
 			int currentIndex = 0;
 
@@ -78,8 +80,9 @@ public class Microsoft extends Company {
 			}
 
 			if (removeFlag) {
+				// 若有移除元素的行為，則所有元素往前移一個位置，最後一個有記錄的位置設為null。
 				for (int i = removeIndex; i < CURRENT_MEMBER_COUNT; i++) {
-					if (isEmployeeRemoveIegal(i)) {
+					if (isEmployeeMoveIegal(i)) {
 						employeeGroup[i] = employeeGroup[i + 1];
 					}
 				}
@@ -89,7 +92,13 @@ public class Microsoft extends Company {
 		}
 	}
 
-	private boolean isEmployeeRemoveIegal(int index) {
+	/**
+	 * 檢查是否為可以移動的位置(不可以為最後一個位置)
+	 * 
+	 * @param index
+	 * @return
+	 */
+	private boolean isEmployeeMoveIegal(int index) {
 		return (index + 1) != EMPLOYEE_GROUP_COUNT;
 	}
 }

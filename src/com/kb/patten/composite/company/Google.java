@@ -9,6 +9,7 @@ import com.kb.patten.composite.main.Node;
 import com.kb.patten.composite.main.NodeSupport;
 
 public class Google extends Company {
+	// 此處為 List
 	private List<Employee> employeeGroup = new ArrayList<>();
 
 	@Override

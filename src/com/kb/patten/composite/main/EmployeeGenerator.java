@@ -6,6 +6,12 @@ import java.util.List;
 import com.kb.patten.composite.employee.Employee;
 import com.kb.patten.composite.employee.EmployeeImpl;
 
+/**
+ * 產生員工類別
+ * 
+ * @author KB
+ * @version 1.0
+ */
 public class EmployeeGenerator {
 	public static List<Employee> genEmployee() {
 		List<Employee> result = new ArrayList<>();
