@@ -11,3 +11,4 @@ Strategy------------策略模式
 Template method-----樣板模式
 Itertor-------------反覆器模式
 Composite-----------合成模式
+Proxy---------------代理模式
